@@ -1,0 +1,26 @@
+## Server port
+server:
+  port: 9993
+
+## H2 Configuration
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /finance-console
+      settings:
+        trace: false
+        web-allow-others: false
+  datasource:
+    url: jdbc:h2:mem:sky-db;
+    username: sa
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        use_sql_comments: true
+        format_sql: true
