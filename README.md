@@ -4,7 +4,7 @@ Please find below GraphQL URLs:
 
 http://localhost:9993/graphiql
 
-Create:
+**Create:**
 
 mutation CustomerMutation {
   createCustomer(input: {
@@ -28,7 +28,7 @@ mutation CustomerMutation {
   }
 }
 
-getAll Customer:
+**getAll Customer:**
 query CustomerQuery{
   
   getCustomers{
@@ -40,7 +40,7 @@ query CustomerQuery{
   }
 }
 
-Update Customer:
+**Update Customer:**
 
 mutation CustomerMutation {
   updateCustomer(customerNumber: 1 
@@ -50,7 +50,7 @@ mutation CustomerMutation {
   }
 }
 
-Delete Customer:
+**Delete Customer:**
 
 mutation CustomerMutation{
   
